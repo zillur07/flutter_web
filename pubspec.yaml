@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   get:
   flutter_svg:
+  syncfusion_flutter_charts:
 
 dev_dependencies:
   flutter_test:

@@ -11,6 +11,11 @@ var myDefaultBackground = Colors.grey[300];
 // Appbar for Apps
 var myAppBar = AppBar(
   backgroundColor: Colors.grey[900],
+  title: KText(
+    text: 'New Change for web with flutter',
+    color: Colors.white,
+    fontSize: 18,
+  ),
 );
 final categoryC = Get.put(CategoryController());
 // Drawer for Apps
@@ -104,23 +109,44 @@ var myDrawer = Obx(
             ],
           )),
           ListTile(
-            leading: Icon(Icons.home),
+            leading: Icon(
+              Icons.home,
+              color: Colors.blueAccent,
+            ),
             title: Text('D A S H B O A R D'),
           ),
           ListTile(
-            leading: Icon(Icons.chat),
+            leading: Icon(
+              Icons.chat,
+              color: Colors.blueAccent,
+            ),
             title: Text(
               'M A S S A G E ',
             ),
           ),
           ListTile(
-            leading: Icon(Icons.settings),
+            leading: Icon(
+              Icons.settings,
+              color: Colors.blueAccent,
+            ),
             title: Text(
               'S E T T I N G S',
             ),
           ),
           ListTile(
-            leading: Icon(Icons.chat),
+            leading: Icon(
+              Icons.shopping_bag_outlined,
+              color: Colors.blueAccent,
+            ),
+            title: Text(
+              'S T O R E',
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.logout,
+              color: Colors.blueAccent,
+            ),
             title: Text(
               'L O G O U T',
             ),

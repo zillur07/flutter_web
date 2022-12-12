@@ -39,7 +39,7 @@ class DesktopScaffold extends StatelessWidget {
                     ),
                   ),
                   ListView.builder(
-                    itemCount: 5,
+                    itemCount: 3,
                     shrinkWrap: true,
                     physics: BouncingScrollPhysics(),
                     primary: false,

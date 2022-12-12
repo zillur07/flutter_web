@@ -4,6 +4,8 @@ import 'package:flutter_web/component/my_list.dart';
 import 'package:flutter_web/models/category.dart';
 import 'package:flutter_web/responsive/constants.dart';
 
+import '../component/right_site.dart';
+
 class MobileScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class MobileScaffold extends StatelessWidget {
               ),
             ),
             ListView.builder(
-              itemCount: 5,
+              itemCount: 3,
               shrinkWrap: true,
               physics: BouncingScrollPhysics(),
               primary: false,
@@ -40,14 +42,23 @@ class MobileScaffold extends StatelessWidget {
                 return MyList();
               },
             ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Container(
-                width: double.infinity,
-                height: 200,
-                color: Colors.pink,
-                child: Column(
-                  children: [],
+            SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Container(
+                  margin: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ),
+                  ),
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      RightSite(),
+                    ],
+                  ),
                 ),
               ),
             ),

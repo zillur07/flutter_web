@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web/helpers/hex_color.dart';
 import 'package:flutter_web/helpers/k_text.dart';
 import 'package:get/get.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class RightSite extends StatelessWidget {
   const RightSite({Key? key}) : super(key: key);
@@ -82,14 +83,14 @@ class RightSite extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: CircleAvatar(
-                    radius: 5,
+                    radius: 3,
                   ),
                 ),
                 Expanded(
                   flex: 5,
                   child: KText(
                     text: 'General Team ',
-                    fontSize: 23,
+                    fontSize: 16,
                     color: Colors.black,
                     bold: true,
                   ),
@@ -100,7 +101,7 @@ class RightSite extends StatelessWidget {
                   child: Icon(
                     Icons.arrow_drop_down_sharp,
                     color: Colors.black,
-                    size: 35,
+                    size: 21,
                   ),
                 ),
               ],
@@ -161,6 +162,149 @@ class RightSite extends StatelessWidget {
                   color: Colors.black12,
                 )
               ],
+            ),
+            child: Image.asset('assets/img/truck-2.png'),
+          ),
+
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            width: Get.width,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  blurRadius: 10.0,
+                  color: Colors.black12,
+                )
+              ],
+            ),
+            child: Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      KText(
+                        text: 'Popular Item',
+                        fontSize: 14,
+                        bold: true,
+                      ),
+                      Spacer(),
+                      KText(
+                        text: 'All feed',
+                        fontSize: 13,
+                        bold: true,
+                        color: Colors.blueGrey,
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 18,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.shopping_bag_outlined,
+                        color: Colors.blueAccent,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          KText(
+                            text: 'Best Offer',
+                            bold: true,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          KText(
+                            text: 'Check our new best offer',
+                            color: Colors.blueGrey,
+                            fontSize: 10,
+                          ),
+                        ],
+                      ),
+                      // Spacer(),
+                      // Icon(
+                      //   Icons.arrow_forward_ios,
+                      //   size: 12,
+                      //   color: Colors.blueGrey,
+                      // ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.inventory,
+                        color: Colors.blueAccent,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          KText(
+                            text: 'Best Offer',
+                            bold: true,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          KText(
+                            text: 'Check our new best offer',
+                            color: Colors.blueGrey,
+                            fontSize: 10,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.chat_outlined,
+                        color: Colors.blueAccent,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          KText(
+                            text: 'Support Request',
+                            bold: true,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          KText(
+                            text: 'Check our new best offer',
+                            color: Colors.blueGrey,
+                            fontSize: 10,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
