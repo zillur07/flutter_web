@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web/helpers/hex_color.dart';
 import 'package:flutter_web/helpers/k_text.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 
 class RightSite extends StatelessWidget {
-  const RightSite({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -112,7 +109,6 @@ class RightSite extends StatelessWidget {
             width: Get.width,
             child: ListView.builder(
               shrinkWrap: true,
-              primary: false,
               scrollDirection: Axis.horizontal,
               physics: BouncingScrollPhysics(),
               itemCount: 5,

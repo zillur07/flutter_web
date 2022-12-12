@@ -46,7 +46,7 @@ class MobileScaffold extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Container(
-                  margin: EdgeInsets.all(15),
+                  margin: EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(

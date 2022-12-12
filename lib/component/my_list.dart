@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:syncfusion_flutter_charts/sparkcharts.dart';
+// import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 
 class MyList extends StatefulWidget {
   @override
@@ -41,7 +41,7 @@ class _MyListState extends State<MyList> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(15.0),
       child: Row(
         children: [
           Expanded(
@@ -55,7 +55,7 @@ class _MyListState extends State<MyList> {
               ),
               height: 150,
               child: Center(
-                child: Container(
+                child: SizedBox(
                   child: SfCircularChart(
                     series: <CircularSeries>[
                       // Render pie chart
